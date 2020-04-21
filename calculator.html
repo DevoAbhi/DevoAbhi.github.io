@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br>
+    <h2>My Calculator</h2>
+    <div class="calc">
+        <form>
+        <input class="display">
+    </form>
+    <table>
+              <tr>
+                <td><input  type="button" value="7" onclick="display(7)" ></td>
+                <td><input  type="button" value="8"  onclick="display(8)"></td>
+                <td><input  type="button" value="9"  onclick="display(9)"></td>
+                <td><input  type="button" value="+"  onclick="display('+')"></td>
+              </tr>
+              <tr>
+                <td><input  type="button" value="4"  onclick="display(4)"></td>
+                <td><input  type="button" value="5"  onclick="display(5)"></td>
+                <td><input  type="button" value="6"  onclick="display(6)"></td>
+                <td><input  type="button" value="-"  onclick="display('-')"></td>
+              </tr>
+              <tr>
+                <td><input  type="button" value="1"  onclick="display(1)"></td>
+                <td><input  type="button" value="2"  onclick="display(2)"></td>
+                <td><input  type="button" value="3"  onclick="display(3)"></td>
+                <td><input  type="button" value="*"  onclick="display('*')"></td>
+              </tr>
+              <tr>
+                <td><input  type="button" value="C" onclick="c()"></td>
+                <td><input  type="button" value="0"  onclick="display(0)"></td>
+                <td><input  type="button" value="=" onclick="eql()"></td>
+                <td><input  type="button" value="/"  onclick="display('/')"></td>
+              </tr>
+              <tr>
+                  <td><input  type="button" value="X" onclick="del()" ></td>
+              </tr>
+            </table>
+         
+    </div>
+    
+    <script type="text/javascript"  >
+        function display(num){
+            $('.display').val($('.display').val() + num);
+            }
+        function eql(){
+            $('.display').val(eval($('.display').val()));
+        }    
+        function c(){
+            $('.display').val('');
+        }
+        function del(){
+            data= $('.display').val();
+            $('.display').val(data.substring(0, data.length -1));
+        }
+    </script>
+    
+</body>
+</html>
+    
