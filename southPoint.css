@@ -1,0 +1,17 @@
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 40px !important;
+ }
+ .nav-link{
+     color: white;
+ }
+ h2{
+     color: white;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ span{
+     background-color: yellow;
+     margin: 0 auto;
+     
+ }

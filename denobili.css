@@ -1,0 +1,137 @@
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 40px !important;
+ }
+ .nav-link{
+     color: white;
+ }
+ h2{
+
+     display: inline;
+     color:#1a0d05;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: bold;
+ }
+ /* span{
+     background-color: yellow;
+     margin: 0 auto;
+     
+     
+ } */
+ h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color:black
+ }
+ .search{
+     position:absolute;
+     right:5px;
+     padding-bottom: 90%;
+ }
+ .back{
+     
+     background-image: url("logode.png");
+     background-size: cover;
+     
+ }
+.head{
+    display: inline;
+}
+.sticky-top {
+    
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.nav {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .nav a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    
+    text-align: center;
+  }
+  
+  .nav a:hover {
+    background-color:#031cfc;
+  }
+  
+  
+  
+  @media screen and (max-width: 500px) {
+    .nav a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  * {
+    box-sizing: border-box;
+    
+    transition: 1s;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 6px;
+}
+ 
+ li:first-child > a {
+    border: none;
+}
+.icons-area a h4 {
+    display: block;
+    overflow: hidden;
+    padding: 15px 10px;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.icons-area {
+    text-align: center;
+}
+.photo{
+    background: #4467b3;
+    margin: 0;
+    padding: 0;
+}
+.notice{
+    background-color:#40b3db;;
+}
+.fee{
+    background-color: #379e29;
+}
+.calendar{
+    background-color: #ba3a51;
+}
+.transport{
+    background-color:#6b60b3;
+}
+.portal{
+    background-color: #b071aa;
+}
+.icons-area a span {
+    padding: 50px 0;
+    display: inline-block;
+}
+.backgr{
+    background-color: #e6e8b3;
+}
+.text{
+    color:black;
+    font-size:small;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
