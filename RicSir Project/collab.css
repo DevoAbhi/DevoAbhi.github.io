@@ -200,3 +200,6 @@ ui li{
         max-height: 150px;
     }
   }
+.title li a:hover{
+    color: darkred;
+}
