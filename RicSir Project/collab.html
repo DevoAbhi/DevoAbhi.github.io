@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbhinabCollaborations</title>
     <link rel="stylesheet" href="collab.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -18,46 +18,48 @@
     <marquee behaviour="scroll" width="100%" direction="left"  onmouseover="this.stop();" onmouseout="this.start();" class="scroll">
         Due to COVID - 19 Pandemic, our offices are closed. We are all working from our respective homes and all our services are available online. Call/Email/Whastapp us for anything and everything. Stay at home, and Stay safe.
     </marquee>
-  <div class="tophead">
-    
-    <div class="row" >
-        <div class="col-lg-3 col">
-            <a href="#" class="head">Live online/offline courses</a>
+  <nav class=" navbar navbar-expand-lg tophead sticky-top">
 
-        </div>
-        <div class="col-lg-6">
-            <div class="row title">
-                <div class="col-lg-3">
-                    <a href="#" ><i class="fa fa-edit"></i>Blogs</a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="#" ><i class="fa fa-desktop" ></i>Webinars</a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="#" ><i class="fa fa-certificate" ></i>Webinars Certificates</a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="#" ><i class="fa fa-question-circle"></i>Support</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="row">
-                <div class="col-lg-5" >
-                    <img src="https://ardentcollaborations.com/images/gplay.webp" alt="">
-                </div>
-                <div class="col-lg-7" id="anim">
-                    <a href="#" id="num">9304618936</a>
-                </div>
-            </div>
-        </div>
+   
+      <span class="navbar-text navbar-brand"><a href="#" class="head">Live online/offline courses</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span ><img  width="30px" height="30px"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAACJCAMAAAAv+uv7AAAATlBMVEX////+/v77+/v8/PwAAAD9/f3x8fFiYmIZGRmioqLk5OS+vr5aWlp1dXUiIiIVFRVpaWmxsbEyMjJ+fn7T09OGhoZAQECoqKjMzMxISEim1MgkAAAGAElEQVR4nMVc65rbKAyVTJjtdGb20stO9/1fdGuHq5CQsCHxj3zRgPGxjpAOhBagvjB9hE+lCYH7emqo3cD4Af74OGyf7LI9fUXP2tAfKttIh/59uf1v3u1/2pCz969+27vm9nvTpt2abSf334JvDnBuo617y3FjBlIBy+1btCH3L4AWQ29eHMoHolqYHBDHPojc6jhndm2MtvLGBTXiG3uZGptHjibmtXRqgLSLHvJuBIg3xYiJGjYYdWoCEGyITa2bSE0TrA1QZ6ImOXefyWiixjNAVWoaZ8vhGN1yLlgtKajwkDYvRH9tnEewsDvU2GYNCEAswdqhphesGjUBCPSmp0yN+iCGGugAwVCUytEoNadSvJpHyDv7UJXt1ACl5kqKJ7eepcbLMeEGZ00GMpriL1PDxb2VmjUpvhgK78EyqfoO6BGatP094Q8JI3uKH6Am65Mp1JyfNVkWaNWXC9ar1Zc6V6ZmMMU3D7ZQU9y6N7gp1ZfGyCA1e7h6aKmhvddU3/KdQ7Z/TvWlzpZhKtW3U42N1EA1NAfkiORySXnYnrOPdymWnNkuuprKWm39bsWXuddmpSbpkwDk68efX2Zef72/gQUIhoySgdzmX6/9uC9ipgDi/l6A5Paie6QRSitccrv9A6b6WYXyGiSfYAFyZPs0p16+rUDyCwzU7PMG8+SGzwVA/qN5hFWZSZ/E3t+nA3n/qnuk3rYIIuHH5+vU620TgZB6SfJwTDAzL62s5f0Te/XtaNZRqUiBxP2TiWtfY/Wlj0r6hFUzs9e+nc2pqE9Ma985C6wukPG1r03FW2oNAcLevWTtK3sEK33ymAUWD8QHlTiw9h3dee6l+F41nr+9aaKmArJ8W4JN8RKQ5WvfzjtjELOLdp5NwbpFEAiS/6bsPGt5JNt3IMBQYyL6aoqn+oSjRg3WedRkWWCuvuPbm4xHeJvAfHD1pfsnYvV1crDOSfHFOwW3jO88j2ZWOaFtKRypP/u9Z1ZfMhQXUQ8RRhUQ7FEznEfOVN/CIxiCRU3xrO0yENJ+LHHBZft4WucnZEafsCl++uVqanI1Vqrvr+9/TL0+3iBSWbAMOrGv0xfLt59tuNUWS82P+UButzcgQBDi/olcED5WIPmX+CDqk171hfcVSL4QMgI//bK/yic0JfWp2e1VcUIUhhysOf0tmTvUIyhRU6h4tyKfIAXS6hO++s6+Gl0eFLW+9qW1JJed4rVye69MkRRfiDtoU/ypbYmrqhMsvVcIo5KaWGRn/7ioe4SjptInlxZY16hJv+88cIHFUiNX4wsLLE3Fy3KY9LbNGkoNtA+2BaurgDxExUvUpOCN+kTwyCg1p4L1rk8Qmv0T292TqVH0iZkaze4m6VKfPDHFc0Aesvbl80j6ValHhYGagbVvh5oYtQt3npvpy79jrU9WpHhh1rAqlXnwcPVVUzxTfVl9ci7Fn541jg5d65NHVl9kqEGIpw3TGz8wxRfU7BGL9rtnp/hWFlxN8Z32ZqiCGvKOBCYsuDRq6mMFEciCcwUCNUV12b/uriqyzJKzFkhZ5jxyZPsEZM35k2PPRqOm/jV/w2VncuQUT37NjzBXnVPSqGn1yaqzWxo1Kdsnf21rzrNhniViNcn7JwfMZWf89KSdZFuEueLcI8kjXVlQlEQ//yyoUH0bhQFt9b27yqUP/mjs/QMZu+jq2dojAnlO9SVDowh7mmbV8kj61xD5tKFRGJ3flugAUfTJbGpI9TUJpb4wurD2FTzC6JPTC6xL1DD6xAzkwgJL1ifYB3Ju1oxSo5w2NFPDi2c9j9TvtMIj7LYEOyGvAbmw9h3wyAlqpMxKhm7ySA28Pm24eu3b8UjeP3lGim+GkntD23ti9WWF0mNSvBwFDrtAGI9MT/HFUFEamIg8meKbasJRk/XJU1J8MRTyQB5TfelQViBrUrzvAhmihlJxipqoT55JDSQgIVCeU319cW4q8HN253lasLKnDQ0ean6B6eQJufoW7WmTulxSIrHrdry3e7k/Z6NnbdIVIPznRpi/UhuZdlD6A/T7t1//B/YId6qORNnxAAAAAElFTkSuQmCC" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse title" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link " style="text-align: center;" ><i class="fa fa-edit"></i>Blogs</a>
+        </li>
+        <li class="nav-item">
+            <a href="#"  class="nav-link" style="text-align: center;"><i class="fa fa-desktop" ></i>Webinars</a>
+        </li>
+        <li class="nav-item">
+            <a href="#"  class="nav-link" style="text-align: center;"><i class="fa fa-certificate" ></i>Webinars Certificates</a>
+        </li>
+        <li class="nav-item ">
+            <a href="#"  class="nav-link " style="text-align: center;"><i class="fa fa-question-circle"></i>Support</a>
+        </li>
+        <li class="nav-item ">
+            <img class="nav-link playstore" style="text-align: center; margin-left:5rem;"  src="https://ardentcollaborations.com/images/gplay.webp" alt="">
+        </li>
+        <li class="nav-item "  >
+            <a   class="nav-link mb-4" style=" text-align: center; margin-left:5rem;" href="#" class="nav-link" id="num">9304618936</a>
+        </li>
+      </ul>
     </div>
-
-  </div>
+  </nav>
   <nav class="navbar navbar-expand-lg ">
+    
       <div class="container-fluid" style="margin-left: 0;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span ><img  width="30px" height="30px"
+                src="data:image/png;base64,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" alt=""></span>
+          </button>
+        
         <a class="navbar-brand" href="#" 
-        style="vertical-align: middle; background-size: 100%; "><img src="download.jpg" alt=""></a>
+        style="vertical-align: middle; background-size: 100%;float:left "><img width="60px" style="float:left" src="download.jpg" alt=""></a>
       <div class="navbar-collapse collapse" id="nav">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -98,7 +100,7 @@
     </div>
   </nav>
   <div class="col-md-12">
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="myCarousel"  class="carousel slide carousel-fade" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="item1 active"></li>
@@ -111,22 +113,22 @@
         <div class="carousel-inner" >
     
           <div class="carousel-item active">
-            <img src="https://admin.ardentcollaborations.com/banner_images/1585911401.webp" width= "1350" height="427">
+            <img class="d-block w-100" src="https://admin.ardentcollaborations.com/banner_images/1585911401.webp" width= "1350" height="427">
             
           </div>
     
           <div class="carousel-item">
-            <img src="https://admin.ardentcollaborations.com/banner_images/1585911585.webp" width= "1350" height="427">
+            <img class="d-block w-100" src="https://admin.ardentcollaborations.com/banner_images/1585911585.webp" width= "1350" height="427">
             
           </div>
         
           <div class="carousel-item">
-            <img src="https://admin.ardentcollaborations.com/banner_images/1585911585.webp" width= "1350" height="427">
+            <img class="d-block w-100" src="https://admin.ardentcollaborations.com/banner_images/1585911585.webp" width= "1350" height="427">
             
           </div>
     
           <div class="carousel-item">
-            <img src="https://admin.ardentcollaborations.com/banner_images/1585911654.webp" width= "1350" height="427">
+            <img class="d-block w-100" src="https://admin.ardentcollaborations.com/banner_images/1585911654.webp" width= "1350" height="427">
             
           </div>
       
@@ -154,36 +156,36 @@
    
                 <div class="item" style="width: 297px; margin-right:30px;">
                     <div class="testimony-wrap text-center">
-                        <a href="course/android-application-development"><img src="https://admin.ardentcollaborations.com/course_images/1573799996.webp" alt="" width="100%"></a>
+                        <a  href="course/android-application-development"><img src="https://admin.ardentcollaborations.com/course_images/1573799996.webp" alt="" width="100%"></a>
                     </div>
             </div>
                 <div class="item" style="width: 297px; margin-right:30px;"> 
                     <div class="testimony-wrap text-center">
-                    <a href="course/mobile-application-development-in-react-native"><img src="https://admin.ardentcollaborations.com/course_images/1569519104.webp" alt="" width="100%"></a>
+                    <a  href="course/mobile-application-development-in-react-native"><img src="https://admin.ardentcollaborations.com/course_images/1569519104.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;">
                      <div class="testimony-wrap text-center">
-                    <a href="course/mobile-application-development-in-flutter"><img src="https://admin.ardentcollaborations.com/course_images/1569519273.webp" alt="" width="100%"></a>
+                    <a  href="course/mobile-application-development-in-flutter"><img src="https://admin.ardentcollaborations.com/course_images/1569519273.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;"> 
                     <div class="testimony-wrap text-center">
-                    <a href="course/blockchain-development-with-bitcoin-and-ethereum"><img src="https://admin.ardentcollaborations.com/course_images/1572893081.webp" alt="" width="100%"></a>
+                    <a  href="course/blockchain-development-with-bitcoin-and-ethereum"><img src="https://admin.ardentcollaborations.com/course_images/1572893081.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;"> 
                     <div class="testimony-wrap text-center">
-                    <a href="course/spring-and-hibernate"><img src="https://admin.ardentcollaborations.com/course_images/1570857514.webp" alt="" width="100%"></a>
+                    <a  href="course/spring-and-hibernate"><img src="https://admin.ardentcollaborations.com/course_images/1570857514.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;"> 
                     <div class="testimony-wrap text-center">
-                    <a href="course/php-and-mysql"><img src="https://admin.ardentcollaborations.com/course_images/1569519725.webp" alt="" width="100%"></a>
+                    <a  href="course/php-and-mysql"><img src="https://admin.ardentcollaborations.com/course_images/1569519725.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;"> 
                     <div class="testimony-wrap text-center">
-                    <a href="course/oracle-sql-and-pl-sql"><img src="https://admin.ardentcollaborations.com/course_images/1570857710.webp" alt="" width="100%"></a>
+                    <a  href="course/oracle-sql-and-pl-sql"><img src="https://admin.ardentcollaborations.com/course_images/1570857710.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;">
                      <div class="testimony-wrap text-center">
-                    <a href="course/oracle-dba"><img src="https://admin.ardentcollaborations.com/course_images/1574146013.webp" alt="" width="100%"></a>
+                    <a  href="course/oracle-dba"><img src="https://admin.ardentcollaborations.com/course_images/1574146013.webp" alt="" width="100%"></a>
                 </div></div>
                 <div class="item" style="width: 297px; margin-right:30px;">
                      <div class="testimony-wrap text-center">
