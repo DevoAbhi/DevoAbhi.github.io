@@ -1,124 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
 }
-
 body{
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,149,218,0.85) 9.9%, rgba(56,80,114,1) 100.3% );
-} 
+    width:100%;
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
 span{
-  font-family: "Noto Sans JP";
-  font-size: 30px;
-  text-shadow: black;
-  font-weight: 600;
-  color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    text-shadow: black;
+    font-weight: 600;
+    color: white;
 }
+
 button{
-  display: contents;
-  float: right;
+    display: contents;
+    float: right;
 }
+
 .navbar {
-  width: 100%;
- 
-  overflow: auto;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
 }
 
-/* Navigation links */
-.navbar ul a {
-  
-  float: inline-end;
-  position: relative;
-  left: 15rem;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 20px;
-  width: 16.67%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; 
-}
-/* .navbar .navbar-brand {
-  float: left;
-}
- */
-.text-content{
-  position: absolute;
-  top: 2em;
-  margin-top: 10em;
-  margin-left: 22em;
-  bottom: 20em;
-  justify-content: center;
-  color: #161716;
-  font-size: 1.3em;
-  
-}
-.text-content span{
-  color: #edcaed;
-  font-size: 1.5em;
-}
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 5rem;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-}
-.social-icons a:last-child {
-  margin-right: 0;
-}
-.title{
-  text-align: center;
-  text-transform: uppercase;
-  color: wheat !important;
-}
-.w-100 h2{
-  color:#131321 ;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.subheading{
-  margin-left: 5em;
-  padding-top: 0em;
-  text-transform: uppercase;
-  color:#141413 ;
-}
-.resume-date{
-  min-width: 0;
-  /* text-align: center; */
-  position: relative;
-  bottom: 10em;
- 
-  
-}
-.text{
-  color: #d399ff !important;
-}
-.resume-content{
-  justify-items: center;
-  
+.navbar-collapse{
+    max-width: 1300px;
+    padding: 0 20rem;
+    margin: auto;
 }
 
-.resume-section{
-  height: 100vh;
-}
-.subskill{
-  font-size: 2em;
-  text-align: center;
-  padding-bottom: 2em;
-  padding-top: 0;
-}
-.subtopic{
-  margin-left: 5em;
-  padding-top: 0em;
-  text-transform: uppercase;
-  color:wheat ;
-  font-size: 20px;
-  font-weight: 400;
-}
-.int{
-  font-size: 20px;
-  color: #352636;
-}
+.navbar .navbar-collapse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+} 
+
+.navbar ul li a {
+    text-align: center; 
+    text-decoration: none;
+    font-size: 20px;
+    width: 14.28%; 
+    display: inline-block;
+    margin-left: 25px;
+  }
+
+  .resume-section{
+    height: 100vh;
+  }
+
+  img .rounded-circle{
+      
+  }
+
+  @media only screen and (max-width: 900px){
+    .navbar-collapse{
+        max-width: 1300px;
+        padding: 0 13rem;
+        margin: auto;
+    }
+  }
