@@ -1,5 +1,18 @@
 (function($) {
     "use strict"; // Start of use strict
+
+    new WOW().init();
+
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if(this.scrollY > 50){
+          $('.navbar').addClass("sticky");
+          
+        } else{
+          $('.navbar').removeClass("sticky");
+        }
+      })
+    })
   
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {

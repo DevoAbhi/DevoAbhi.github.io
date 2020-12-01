@@ -4,20 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 body{
     width:100%;
-    height: 100vh;
-    overflow-x: hidden; 
-    overflow-y: hidden; 
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .video-container {
-    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: -1;
 }
 
@@ -32,6 +33,7 @@ span{
 button{
     display: contents;
     float: right;
+    color: white;
 }
 
 .navbar {
@@ -40,13 +42,17 @@ button{
     position: fixed;
 }
 
+.navbar.sticky{
+    background-color:red ;
+    opacity: 0.3;
+}
+
 .navbar-collapse{
-    max-width: 1300px;
-    padding: 0 20rem;
+    padding: 0 19rem;
     margin: auto;
 }
 
-.navbar .navbar-collapse{
+.navbar.navbar-collapse{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,15 +71,98 @@ button{
   .resume-section{
     height: 100vh;
   }
+ 
+   img.img-profile{
+    display: flex;
+    float: right;
+    margin-top: 1rem;
+    position: relative;
+    top: 5rem;
+  } 
 
-  img .rounded-circle{
-      
+  .text-content{
+      position: relative;
+      top: 10rem;
+      left: 5rem;
+
   }
+
+  .txt-1{
+      font-size: 25px;
+  }
+  .txt-2{
+      font-size: 70px;
+  }
+  .txt-3{
+      font-size: 30px;
+  }
+  .job{
+      color: red;
+      font-size: 50px;
+  }
+
+  .section-header{
+    font-size: 50px;
+    color: cornsilk;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .education{
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
+
+  .resume-list {
+	list-style: none;
+	margin-left: 60px;
+	padding-left: 110px;
+	border-left: 2px solid #40424a;
+}
+
+.resume-list li {
+	margin-bottom: 120px;
+	position: relative;
+}
+
+.resume-list li:last-child {
+	margin-bottom: 0;
+}
+
+.resume-list li:after {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 2px solid #40424a;
+	border-radius: 50px;
+	background: #cacaca;
+	top: 30px;
+	left: -118px;
+}
+
+.resume-list h2 {
+	font-size: 72px;
+	margin-bottom: 10px;
+}
+
+.resume-list h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #808181;
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+
+.resume-list p {
+	margin-bottom: 0;
+}
 
   @media only screen and (max-width: 900px){
     .navbar-collapse{
         max-width: 1300px;
-        padding: 0 13rem;
+        padding: 0 10rem;
         margin: auto;
+        background-color: black ;
     }
   }
