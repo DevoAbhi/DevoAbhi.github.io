@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'PT Serif', serif;
 }
 body{
     width:100%;
@@ -23,7 +23,7 @@ body{
 }
 
 span{
-    font-family: 'Lato', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 30px;
     text-shadow: black;
     font-weight: 600;
@@ -110,14 +110,15 @@ button{
   }
 
   .education{
-    font-family: 'Josefin Sans', sans-serif !important;
+    position: relative;
+    right: 18rem;
   }
 
   .resume-list {
 	list-style: none;
 	margin-left: 60px;
 	padding-left: 110px;
-	border-left: 2px solid #40424a;
+	border-left: 2px solid #fffff0;
 }
 
 .resume-list li {
@@ -143,13 +144,19 @@ button{
 
 .resume-list h2 {
 	font-size: 72px;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
+    color: #ffdead;
+}
+
+.resume-list h3 {
+	
+    color: #f3e5ab;
 }
 
 .resume-list h4 {
 	font-size: 16px;
 	text-transform: uppercase;
-	color: #808181;
+	color: #fdf9ef;
 	margin-top: 10px;
 	margin-bottom: 45px;
 }
