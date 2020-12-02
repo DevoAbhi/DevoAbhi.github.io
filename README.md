@@ -2,4 +2,4 @@
 
 ### This portfolio site was made in a small span of time....
 
-#### Any type of suggestions are welcomed!!!
+#### Any type of suggestions are welcome!!!
