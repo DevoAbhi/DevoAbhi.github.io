@@ -1,32 +1,34 @@
 (function($) {
-    // "use strict"; // Start of use strict
+    "use strict"; // Start of use strict
 
-    new WOW().init();
+    new WOW().init(); 
 
-    // $(document).ready(function(){
-    //   $(window).scroll(function(){
-    //     if(this.scrollY > 50){
-    //       $('.navbar').addClass("sticky");
-          
-    //     } else{
-    //       $('.navbar').removeClass("sticky");
-    //     }
-    // //   })
-    // })
-  
+    document.onreadystatechange = function() { 
+      if (document.readyState !== "complete") { 
+          document.querySelector( 
+            "body").style.visibility = "hidden"; 
+          document.querySelector( 
+            "#loader").style.visibility = "visible"; 
+      } else { 
+          document.querySelector( 
+            "#loader").style.display = "none"; 
+          document.querySelector( 
+            "body").style.visibility = "visible"; 
+      } 
+  }; 
     // Smooth scrolling using jQuery easing
-    // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    //     var target = $(this.hash);
-    //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    //     if (target.length) {
-    //       $('html, body').animate({
-    //         scrollTop: (target.offset().top)
-    //       }, 1000, "easeInOutBack");
-    //       return false;
-    //     }
-    //   }
-    // });
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top)
+          }, 1000, "easeInOutBack");
+          return true;
+        }
+      }
+    });
   
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {

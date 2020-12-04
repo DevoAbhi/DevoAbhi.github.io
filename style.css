@@ -48,7 +48,7 @@ button{
 }
 
 .navbar-collapse{
-    padding: 0 19rem;
+    padding: 0 26rem;
     margin: auto;
 }
 
@@ -87,6 +87,13 @@ button{
 
   }
 
+  .about{
+    position: relative;
+    left: 2rem;
+    color: #ffdead;
+    font-size: 30px;
+  }
+
   .txt-1{
       font-size: 25px;
   }
@@ -112,6 +119,10 @@ button{
   .education{
     position: relative;
     right: 18rem;
+  }
+
+  .resume-section#education{
+      height: 165vh;
   }
 
   .resume-list {
@@ -158,6 +169,12 @@ button{
 	text-transform: uppercase;
 	color: #fdf9ef;
 	margin-top: 10px;
+}
+
+.resume-list h5 {
+	font-size: 16px;
+	color: #fdf9ef;
+	margin-top: 10px;
 	margin-bottom: 45px;
 }
 
@@ -165,6 +182,114 @@ button{
 	margin-bottom: 0;
 }
 
+.resume-section .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .main{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+} */
+
+/* .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .skill-per{
+    height: 20px;
+    background-color:#0099ff;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  } */
+
+  .subskill{
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 0;
+  }
+
+  .subtopic{
+    margin-left: 5em;
+    padding-top: 0em;
+    text-transform: uppercase;
+    color:wheat ;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .con-img{
+      width: 90%;
+      justify-content: center;
+      position: relative;
+      top: 5rem;
+  }
+
+  .contact{
+      font-size: 30px;
+      color: #ffdead;
+      position: absolute;
+      top: 8rem;
+      right: 8rem;
+  }
+  .contact .btn{
+    position: relative;
+    top: 1rem; 
+    right: 6rem;  
+    font-size: 20px; 
+    transition-duration: 0.5s;
+  }
+
+  
   @media only screen and (max-width: 900px){
     .navbar-collapse{
         max-width: 1300px;
