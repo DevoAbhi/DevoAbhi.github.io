@@ -1,29 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    li.subitem{
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <div class="container" id="outer">
 
-    
-    <ul class="biglist" id="outerlist">
-    <li class="listitem" id="firstitem" >First Item
-        <ul class="smalllist" id="innerlist">
-            <li class="subitem" id="innerchild" >Inner Child</li>
-        </ul>
-    </li>
-        <li class="listitem" id="seconditem" >Second Item</li>
-        <li class="listitem"  >Third Item</li>
-        <li class="listitem"  >Fourth Item</li>
-    </ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style >
+      
+
+      body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(115deg, #00004d     25%,  #00001a 75%);
+  
+}
+
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.skill-per{
+  height: 20px;
+  background-color:#0099ff;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="90"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Javascript</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="60"></div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script>
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
